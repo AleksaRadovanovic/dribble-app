@@ -28,6 +28,7 @@ export default function CustomTabBar() {
     }
 
     return (
+        
         <TabBar>
             <Tabs>
                 <Tab icon="ios-navigate-circle-outline" name="Home"/>
