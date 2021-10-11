@@ -1,0 +1,27 @@
+const command = {
+    cmd : [
+        'npm || expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view',
+        'yarn add @react-navigation/native',
+        'yarn add @react-navigation/stack'
+    ],
+}
+
+"-----------------------App.js-----------------------"  
+
+import Home from './src/screens/Home';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+const Stack = createStackNavigator();
+
+function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{headerShown: false }}>
+        <Stack.Screen name="Home" component={Home} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+export default App;
