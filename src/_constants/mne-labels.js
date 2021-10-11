@@ -1,11 +1,8 @@
 const MneLabels = {
-    TITLE: 'TITLE',
-    TITLE: 'TITLE',
-    TITLE: 'TITLE',
-    TITLE: 'TITLE',
-    TITLE: 'TITLE',
-    TITLE: 'TITLE',
-    TITLE: 'TITLE',
-    TITLE: 'TITLE',
-    TITLE: 'TITLE',
+    HOME:               'Početna',
+    FAVORITES:          'Omiljeni',
+    PROFILE:            'Nalog',
+    SEARCH:             'Pretraga',
+    CATEGORIES:         'Kategorije',
+    LIVE_CHANNELS:      'Uživo kanali',
 }

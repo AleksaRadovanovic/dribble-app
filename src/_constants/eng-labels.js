@@ -1,11 +1,8 @@
 const EngLabels = {
-    TITLE: 'TITLE',
-    TITLE: 'TITLE',
-    TITLE: 'TITLE',
-    TITLE: 'TITLE',
-    TITLE: 'TITLE',
-    TITLE: 'TITLE',
-    TITLE: 'TITLE',
-    TITLE: 'TITLE',
-    TITLE: 'TITLE',
+    HOME:               'HOME',
+    FAVORITES:          'Favorites',
+    PROFILE:            'Profile',
+    SEARCH:             'Search',
+    CATEGORIES:         'Categories',
+    LIVE_CHANNELS:      'Live Channels',
 }

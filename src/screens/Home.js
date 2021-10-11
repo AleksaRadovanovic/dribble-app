@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useContext, useEffect, useState } from 'react';
 import { StyleSheet, Text, View, StatusBar } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
+import styled from 'styled-components';
 import CategoriesSwiper from '../components/CategoriesSwiper';
 import ChannelsSwiper from '../components/ChannelsSwiper';
 import CustomTabBar from '../components/CustomTabBar';
@@ -171,7 +172,7 @@ export default function Home() {
   }
 
   return (
-    <View style={styles.container}>
+    <Container>
         <StatusBar backgroundColor="#fff"  animated={true} barStyle="dark-content"/>
         <ScrollView 
           showsVerticalScrollIndicator={false} 
@@ -183,17 +184,13 @@ export default function Home() {
           <TopCategories topCategories={topCategories}/>
         </ScrollView>
         <CustomTabBar />
-    </View>
+    </Container>
   )
 }
 
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    position: 'relative',
-    backgroundColor: '#fff'
-  },
-});
+const Container = styled.View`
+    flex: 1;
+    background-color: #fff;
+    position: relative;
+`;
  

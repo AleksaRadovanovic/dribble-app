@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { ScrollView, StatusBar, StyleSheet, View } from 'react-native'
+import styled from 'styled-components';
 import CustomTabBar from '../components/CustomTabBar';
 import Text from '../components/StylessComponents/Text';
 import context from '../context/context';
@@ -8,7 +9,7 @@ export default function Favorites() {
     const theme = useContext(context);
 
     return (
-        <View style={styles.container}>
+        <Container>
             <StatusBar backgroundColor="#fff"  animated={true} barStyle="dark-content"/>
             <ScrollView
                 showsVerticalScrollIndicator={false}
@@ -22,15 +23,12 @@ export default function Favorites() {
                 </View>
             </ScrollView>
             <CustomTabBar />
-        </View>
+        </Container>
     )
 }
 
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-      position: 'relative',
-      backgroundColor: '#fff'
-    },
-  });
+const Container = styled.View`
+    flex: 1;
+    background-color: #fff;
+    position: relative;
+`;

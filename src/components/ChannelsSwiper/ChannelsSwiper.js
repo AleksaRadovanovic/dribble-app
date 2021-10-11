@@ -4,7 +4,7 @@ import Carousel from 'react-native-snap-carousel';
 import styled from 'styled-components';
 import Text from '../StylessComponents/Text';
 import Image from '../StylessComponents/Image';
-
+import labelService from '../../_services/label-service';
 const width = Dimensions.get('window').width;
 
 const Item = ({item}) => {
@@ -36,12 +36,14 @@ const Item = ({item}) => {
 }
 
 export default function ChannelsSwiper({ channels}) {
+    const theme = useContext(Context);
+
     return (
         <Container>
             <TitleContainer>
-                <Title>Live Channels</Title>
+                <Title>{labelService.getLabel(theme.language, 'LIVE_CHANNELS')}</Title>
             </TitleContainer>
-            <CarouselContainer style={{ paddingBottom: 10}}>
+            <CarouselContainer>
                 <Carousel
                     data={channels}
                     renderItem={(props) => (
